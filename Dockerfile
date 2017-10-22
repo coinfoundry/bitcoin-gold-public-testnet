@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubuntu:xenial
 MAINTAINER oliver@weichhold.com
 
 RUN apt-get -y update && apt-get -y install build-essential libssl-dev libboost-all-dev libdb5.3 \
