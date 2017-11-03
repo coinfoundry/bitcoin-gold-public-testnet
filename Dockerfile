@@ -20,4 +20,4 @@ RUN mkdir /data && chmod 777 /data && touch /data/bgold.conf
 
 EXPOSE 8232 8233
 WORKDIR /tmp
-ENTRYPOINT bgoldd -server -testnet -datadir=/data -rpcuser=user -rpcpassword=pass -port=8233 -rpcport=8232 -rpcbind=0.0.0.0 -rpcallowip=::/0 -addnode=dnsseed.minepool.gold
+ENTRYPOINT bgoldd -server -testnet -datadir=/data -rpcuser=user -rpcpassword=pass -port=8233 -rpcport=8232 -rpcbind=0.0.0.0 -rpcallowip=::/0 -addnode=eunode.pool.gold -addnode=asianode.pool.gold
